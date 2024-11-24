@@ -1,0 +1,19 @@
+{
+  "name": "tomemiru-webinar-ps_contact_log",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "dcc": "docker-compose -f cicd/development/docker-compose.yaml --env-file .env",
+    "create-schema": "chmod +x ./create-schema.sh && ./create-schema.sh",
+    "process-prod-data": "chmod +x ./process-prod-data.sh && ./process-prod-data.sh"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.5"
+  },
+  "devDependencies": {
+    "@types/node": "^22.9.3"
+  }
+}
