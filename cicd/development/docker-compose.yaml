@@ -4,7 +4,7 @@ services:
     container_name: ${DB_CONTAINER_NAME}
     image: mysql:8.0
     ports:
-      - 127.0.0.1:${DATABASE_PORT:-3310}:3306
+      - 127.0.0.1:${DATABASE_PORT:-3306}:3306
     volumes:
             - mysql-data:/var/lib/mysql
     environment:
